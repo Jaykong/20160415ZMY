@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwO-EA-F8Y">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDj-y0-id9">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="1740"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="4p1-Ms-acc">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="IQ6-gO-xaE">
+                                                <rect key="frame" x="0.0" y="1160" width="560" height="580"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image3" translatesAutoresizingMaskIntoConstraints="NO" id="qgD-4i-kgY">
+                                                <rect key="frame" x="0.0" y="580" width="560" height="580"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="IQ6-gO-xaE" firstAttribute="height" secondItem="4p1-Ms-acc" secondAttribute="height" id="6dw-d1-5w0"/>
+                                            <constraint firstItem="4p1-Ms-acc" firstAttribute="top" secondItem="nDj-y0-id9" secondAttribute="top" id="A3Q-lb-ohj"/>
+                                            <constraint firstItem="qgD-4i-kgY" firstAttribute="leading" secondItem="nDj-y0-id9" secondAttribute="leading" id="CRH-ee-FNB"/>
+                                            <constraint firstItem="4p1-Ms-acc" firstAttribute="leading" secondItem="nDj-y0-id9" secondAttribute="leading" id="CYd-8L-Bqw"/>
+                                            <constraint firstItem="IQ6-gO-xaE" firstAttribute="leading" secondItem="nDj-y0-id9" secondAttribute="leading" id="Eoo-75-Xwh"/>
+                                            <constraint firstAttribute="trailing" secondItem="qgD-4i-kgY" secondAttribute="trailing" id="Ns7-c3-UQf"/>
+                                            <constraint firstAttribute="bottom" secondItem="IQ6-gO-xaE" secondAttribute="bottom" id="RKh-KA-fLD"/>
+                                            <constraint firstItem="qgD-4i-kgY" firstAttribute="width" secondItem="4p1-Ms-acc" secondAttribute="width" id="YLw-X9-u8Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="4p1-Ms-acc" secondAttribute="trailing" id="ZK3-1K-nin"/>
+                                            <constraint firstItem="qgD-4i-kgY" firstAttribute="height" secondItem="4p1-Ms-acc" secondAttribute="height" id="ef6-BX-vNJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="IQ6-gO-xaE" secondAttribute="trailing" id="gKh-9O-sxm"/>
+                                            <constraint firstItem="IQ6-gO-xaE" firstAttribute="width" secondItem="4p1-Ms-acc" secondAttribute="width" id="w8W-Kv-KoR"/>
+                                            <constraint firstItem="qgD-4i-kgY" firstAttribute="top" secondItem="4p1-Ms-acc" secondAttribute="bottom" id="w9h-cs-a8C"/>
+                                            <constraint firstItem="IQ6-gO-xaE" firstAttribute="top" secondItem="qgD-4i-kgY" secondAttribute="bottom" id="yW1-WT-BZQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nDj-y0-id9" firstAttribute="width" secondItem="ZwO-EA-F8Y" secondAttribute="width" id="BT5-9d-Yrv"/>
+                                    <constraint firstItem="nDj-y0-id9" firstAttribute="leading" secondItem="ZwO-EA-F8Y" secondAttribute="leading" id="CVd-FD-ZDH"/>
+                                    <constraint firstItem="nDj-y0-id9" firstAttribute="height" secondItem="ZwO-EA-F8Y" secondAttribute="height" multiplier="3" id="E5I-uG-gZi"/>
+                                    <constraint firstAttribute="trailing" secondItem="nDj-y0-id9" secondAttribute="trailing" id="ThI-aU-wI4"/>
+                                    <constraint firstItem="nDj-y0-id9" firstAttribute="top" secondItem="ZwO-EA-F8Y" secondAttribute="top" id="YF5-UT-RjA"/>
+                                    <constraint firstAttribute="bottom" secondItem="nDj-y0-id9" secondAttribute="bottom" id="gSL-Eh-qOa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZwO-EA-F8Y" secondAttribute="trailing" id="H1l-Fv-wLT"/>
+                            <constraint firstItem="ZwO-EA-F8Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bfv-JC-4lB"/>
+                            <constraint firstItem="ZwO-EA-F8Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="izi-jL-gxI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZwO-EA-F8Y" secondAttribute="bottom" id="yT6-PH-utl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="289"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image1" width="853" height="533"/>
+        <image name="Image2" width="117" height="73"/>
+        <image name="Image3" width="236" height="120"/>
+    </resources>
+</document>
