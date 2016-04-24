@@ -10,11 +10,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int number, sumNumber, right_digit;
+        int number, sumNumber, right_digit, k = 1;
         
+        for (; k >0;) {  //for(;;)
         printf("Enter an integer.\n");
         scanf("%i", &number);
         
+        sumNumber = 0;
         while ( number != 0) {
             right_digit = number % 10;
             printf("%i", right_digit);
@@ -22,6 +24,7 @@ int main(int argc, const char * argv[]) {
             sumNumber += right_digit;
         }
         printf("The sum of digit is %i\n", sumNumber);
+    }
     }
     return 0;
 }

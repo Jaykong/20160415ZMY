@@ -10,9 +10,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int n, number, triangularNumber, counter;
+        int n, number, triangularNumber;
         
-        for ( counter = 0; counter <= number; ++counter) {
+        for (;;) {
             printf("What triangular number do you want?\n");
             scanf("%i", &number);
             

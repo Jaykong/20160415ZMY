@@ -28,17 +28,17 @@ int main(int argc, const char * argv[]) {
       */
         //----------- while loop -------------
         
-        n = 0;
         while ( counter <= 5) {
             printf("What triangular number do you want?\n");
             scanf("%i", &number);
             ++counter;
             
-            //triangularNumber = 0; ??????
-            
+            triangularNumber = 0;
+            n = 1;
             while ( n <= number) {
                 triangularNumber += n;
                 ++n;
+    
             }
             printf("The triangular number %i is %i\n", number, triangularNumber);
         }
